@@ -147,6 +147,33 @@ Estándares clave para interoperabilidad en servicios financieros.
 
 Con redundancia, circuit breakers, timeouts, health checks y diseño stateless para escalar horizontalmente.
 
+**Arquitectuta MultiRegion**
+- mantener replicas activas
+- desplegar multiples zonas con disponibilidad.
+- usar balanceadore de cargas inteligentes.
+- redirigir el trafico si una zona falla.
+**Patrones resilencia**
+- Implementar el patron de cirucit breaker
+- cortar llamada a servicios caidos
+- evitar acumulacion de hilos bloqueados
+- usar intentos con retraso exponencial
+**Aislamiento fallos (bulkheade / rate limiting)**
+- aislar recurso critico por componente
+- evitar que un fallo arrastre todo
+- aplicar limite tasa
+- prevenir saturacion por picos de traficos.
+**base de datos distribuidas**
+- usar replicas de lecturas separadas
+- implementar conmutacion por error automatica.
+- desacoplar comunicacion por colas de mensajes
+- procesar tareas en forma asincrona
+**Monitoreo Proactivo / Autoescalado**
+- configurar alertas tempranas
+- medir latencia , errores y saturacion
+- configurar el escalado horizontal 
+- levantar instancia ante un colapso.
+- health check
+
 **17. ¿Qué consideraciones de cumplimiento normativo tomas en cuenta?**
 
 - Trazabilidad de datos, 
