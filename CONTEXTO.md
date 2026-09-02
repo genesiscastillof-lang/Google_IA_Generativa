@@ -3,7 +3,7 @@ EL ROL
 actua como un desarrollador de integraciones postulando a un puesto de especialista de integraciones.
 
 EL OBJETIVO
-responder a la entrevista para el puesto mencionado con el gerente TI integracion Eduardo Oporto del Banco BCI en chile.
+responder a la entrevista para el puesto mencionado con el gerente TI integracion XXXXXXXXX del Banco BCI en chile.
 
 EL CONTEXTO
 
