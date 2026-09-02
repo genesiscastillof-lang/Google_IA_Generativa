@@ -1,16 +1,17 @@
-EL ROL
+**EL ROL**
 
 actua como un desarrollador de integraciones postulando a un puesto de especialista de integraciones.
 
-EL OBJETIVO
+**EL OBJETIVO**
+
 responder a la entrevista para el puesto mencionado con el gerente TI integracion XXXXXXXXX del Banco BCI en chile.
 
-EL CONTEXTO
+**EL CONTEXTO**
 
 segun el anuncio del empleo, dice asi:
 Diseñar e implementar los microservicios y APIs que permiten habilitar la plataforma de Integración del banco, con el fin de dar soporte al proceso de transformación digital en Bci, permitiendo que la corporación pueda contar con una plataforma basada en componentes independientes, autónomos y escalables, entregados de forma rápida y oportuna, con foco en la excelencia y utilización óptima de recursos.
 
-las funciones son:
+*Las funciones son:*
 - Implementar APIs y microservicios en los distintos proyectos/programas de Transformación Digital, basados en un modelo de referencia para servicios financieros y en estándares de la industria, que posteriormente pasarán a formar parte del catálogo de microservicios del banco.Permitir que nuevos productos y servicios puedan ser entregados de forma ágil, poniendo énfasis en la reutilización de componentes.
 - Proveer APIS y microservicios tanto para nuestros clientes internos como externos.
 - Participar en la co-creación de un gobierno robusto(procesos, roles, tecnología) que permita entregar en tiempo, forma y calidad los microservicios a nuestros clientes.
@@ -20,7 +21,7 @@ las funciones son:
 - Adoptar las prácticas de Delivery Continuo.
 - Optimizar los tiempos de paso a producción realizando entregas continuas para los clientes internos y externos. Con foco en mejorar el time-to-value y lograr eficiencias mediante la disminución de los esfuerzos de certificación.
 
-LA ESTRUCTURA
+**LA ESTRUCTURA**
 
 elaborar 30 principales preguntas posible que pueda hacer para esta entrevista con el gerente.
 
@@ -31,124 +32,162 @@ elaborar 30 principales preguntas posible que pueda hacer para esta entrevista c
 ## 1. Motivación y fit
 
 **1. ¿Por qué te interesa este puesto y por qué en Bci?**
+
 Porque Bci lidera la transformación digital en Chile y quiero aportar mi experiencia en integración a una plataforma que impacta a millones de clientes.
 
 **2. ¿Qué entiendes por "plataforma de integración" y cuál es su rol en la transformación digital?**
+
 Es la capa que conecta sistemas heterogéneos (core, canales, terceros) mediante APIs y microservicios estandarizados, habilitando agilidad y reutilización.
 
 **3. Cuéntame tu trayectoria: ¿cómo llegaste a especializarte en integraciones/APIs?**
+
 Empecé en desarrollo backend, migré a integración por SOA/ESB, y con el tiempo me especialicé en APIs REST y microservicios cloud-native.
 
 **4. ¿Qué te atrae de trabajar en un sector regulado como el financiero?**
+
 Me atrae el nivel de exigencia técnica y de seguridad que exige el rubro financiero; es un entorno donde la calidad del diseño realmente importa.
 
 ## 2. Diseño de APIs y microservicios
 
 **5. ¿Qué principios sigues al diseñar una API REST?**
+
 Contract-first, diseño orientado a recursos, versionado semántico y documentación con OpenAPI/Swagger. Como referencia, suelo recomendar estos dos videos:
 - [Deep Dive into REST API Design and Implementation Best Practices](https://www.youtube.com/watch?v=7nm1pYuKAhY)
 - [9 Must-Know REST API Design Principles for Developers](https://www.youtube.com/watch?v=pJ83mmqcvoQ)
 
 **6. ¿Cómo diseñarías una API para que sea reutilizable por múltiples equipos?**
+
 Definiendo contratos genéricos y desacoplados del consumidor, con capacidades configurables (parámetros, filtros) en vez de endpoints ad-hoc. 
-Por ejemplo: en vez de crear `/clientes/activos` y `/clientes/inactivos`, diseñaría un único endpoint `/clientes?estado=activo` que cualquier equipo (canal web, app, un tercero) pueda consumir ajustando solo los parámetros, sin duplicar lógica de negocio.
+
+    Por ejemplo: en vez de crear `/clientes/activos` y `/clientes/inactivos`, diseñaría un único endpoint `/clientes?estado=activo` que cualquier equipo (canal web, app, un tercero) pueda consumir ajustando solo los parámetros, sin duplicar lógica de negocio.
 
 Video de referencia: [Microservices Best Practices](https://www.youtube.com/watch?v=Ljj166lMj4s).
 
 **7. ¿Diferencias entre microservicios y monolito, y cuándo elegir cada uno?**
-Monolito para dominios simples o equipos pequeños; microservicios cuando se necesita escalar, desplegar independiente y aislar fallas.
+
+- Monolito para dominios simples o equipos pequeños; 
+- Microservicios cuando se necesita escalar, desplegar independiente y aislar fallas.
 
 **8. ¿Cómo abordas el versionado de APIs sin romper a los consumidores?**
-Versionado en la URL o header, manteniendo compatibilidad hacia atrás y períodos de convivencia antes de deprecar. Ejemplo: si `/v1/transferencias` cambia su estructura de respuesta, publico `/v2/transferencias` con el nuevo contrato, mantengo `/v1` operativo y monitoreado durante un período de transición (ej. 6 meses), notifico a los consumidores vía changelog y solo deprecio `/v1` cuando confirmo que ya no recibe tráfico relevante.
+
+Versionado en la URL o header, manteniendo compatibilidad hacia atrás y períodos de convivencia antes de deprecar. 
+    Ejemplo: si `/v1/transferencias` cambia su estructura de respuesta, publico `/v2/transferencias` con el nuevo contrato, mantengo `/v1` operativo y monitoreado durante un período de transición (ej. 6 meses), notifico a los consumidores vía changelog y solo deprecio `/v1` cuando confirmo que ya no recibe tráfico relevante.
 
 **9. ¿Qué patrones usas para la comunicación entre microservicios?**
+
 Síncrono (REST) para consultas en tiempo real; eventos/colas (Kafka, RabbitMQ) para desacoplar procesos y mejorar resiliencia.
 
 **10. ¿Cómo garantizas idempotencia y manejo de errores en transacciones distribuidas?**
-Uso de idempotency keys, patrones saga/compensación y manejo explícito de reintentos con backoff. Video tutorial recomendado: [Saga Pattern: Mastering Distributed Transactions](https://m.youtube.com/watch?v=iJT8ehN8A_I).
+
+Uso de idempotency keys, patrones saga/compensación y manejo explícito de reintentos con backoff. 
+
+Video tutorial recomendado: [Saga Pattern: Mastering Distributed Transactions](https://m.youtube.com/watch?v=iJT8ehN8A_I).
 
 **11. ¿Qué experiencia tienes con API Gateways?**
+
 He trabajado con Apigee/Kong para gestión de tráfico, seguridad, rate limiting y analítica de consumo.
 
 **12. ¿Cómo diseñarías un microservicio expuesto a clientes internos y externos?**
+
 Un mismo backend con dos "fachadas" (gateway interno y externo), políticas de seguridad y throttling diferenciadas por audiencia.
 
 ## 3. Arquitectura e integración bancaria
 
 **13. ¿Experiencia integrando sistemas core bancarios o legados?**
+
 He integrado sistemas legados vía adaptadores/middleware, exponiendo sus funcionalidades como APIs modernas sin tocar el core.
 
 **14. ¿Cómo aseguras una API que expone datos financieros sensibles?**
+
 OAuth2/OIDC, mTLS, cifrado en tránsito y reposo, tokenización de datos sensibles y validación estricta de scopes.
 
 OAuth2/OIDC, mTLS, cifrado, tokenización, scopes
 Seguridad en capas: transporte, autenticación, autorización y datos.
 
-Para asegurar una API que maneja datos financieros sensibles, se debe implementar una estrategia de defensa en profundidad. Esto significa aplicar múltiples capas de seguridad tanto en la autenticación, la infraestructura como en el ciclo de vida del dato.
+    Para asegurar una API que maneja datos financieros sensibles, se debe implementar una estrategia de defensa en profundidad. Esto significa aplicar múltiples capas de seguridad tanto en la autenticación, la infraestructura como en el ciclo de vida del dato.
 
 **15. ¿Qué sabes sobre Open Banking, ISO 20022 o BIAN?**
+
 Conozco los principios de Open Banking (consentimiento, APIs estandarizadas) y modelos de referencia tipo BIAN para dominios financieros.
 
 Consentimiento, APIs estandarizadas, modelo de referencia BIAN
 Estándares clave para interoperabilidad en servicios financieros.
 
 **16. ¿Cómo manejas alta disponibilidad en un microservicio crítico?**
+
 Con redundancia, circuit breakers, timeouts, health checks y diseño stateless para escalar horizontalmente.
 
 **17. ¿Qué consideraciones de cumplimiento normativo tomas en cuenta?**
+
 Trazabilidad de datos, minimización de información sensible expuesta y cumplimiento de normativa de protección de datos vigente.
 
 ## 4. Delivery continuo y DevOps
 
 **18. ¿Qué experiencia tienes con pipelines de CI/CD?**
+
 He implementado pipelines con Jenkins/GitLab CI: build, test automatizado, análisis estático y despliegue automatizado por ambiente.
 
 **19. ¿Cómo reduces los tiempos de paso a producción sin sacrificar calidad?**
+
 Automatizando pruebas y certificación, usando feature flags y despliegues progresivos (canary/blue-green).
 
 **20. ¿Qué prácticas de testing automatizado aplicas?**
+
 Pruebas unitarias, contract testing (Pact) e integración automatizada en el pipeline antes de cada release.
 
 **21. ¿Experiencia con contenedores y orquestadores?**
+
 Sí, uso Docker para empaquetar servicios y Kubernetes para orquestación, escalado y auto-healing.
 
 **22. ¿Cómo manejas el rollback de un microservicio que falla en producción?**
+
 Con versionado de artefactos y despliegues blue-green/canary que permiten revertir rápido al estado anterior estable.
 
 ## 5. Gobierno y calidad
 
 **23. ¿Qué entiendes por "gobierno de APIs"?**
+
 Procesos claros de certificación, roles definidos (dueño de API, arquitecto, QA) y tooling que automatice validaciones de estándares.
 
 **24. ¿Cómo aseguras que un microservicio cumpla estándares antes de sumarse al catálogo?**
+
 Con checklists de certificación automatizados: seguridad, documentación, pruebas y cumplimiento de convenciones de diseño.
 
 **25. ¿Cómo mides la calidad y rendimiento de una API en producción?**
+
 Con métricas de disponibilidad, latencia, tasa de error y dashboards de observabilidad (APM, logs centralizados).
 
 **26. ¿Qué harías si un equipo quiere saltarse el proceso de certificación?**
+
 Explicaría el riesgo de saltarse el proceso y buscaría una vía rápida pero segura, priorizando junto al equipo qué controles son innegociables.
 
 ## 6. Liderazgo y equipo
 
 **27. ¿Cómo has liderado técnicamente o mentorizado a colegas?**
+
 He liderado documentación de buenas prácticas y sesiones de mentoría técnica para nivelar a desarrolladores junior en diseño de APIs.
 
 **28. Cuéntame de una vez que convenciste a un equipo de adoptar una buena práctica.**
+
 Usé datos concretos (incidentes, deuda técnica) para mostrar el costo de no adoptar la práctica, y logré consenso gradual.
 
-**29. ¿Cómo manejas el desacuerdo técnico dentro de un equipo?** *(respuesta alternativa)*
+**29. ¿Cómo manejas el desacuerdo técnico dentro de un equipo?** 
+
+*(respuesta alternativa)*
+
 Priorizo separar el desacuerdo de la persona: pido que cada postura se sustente con un prototipo rápido o un caso de prueba (spike técnico) en vez de debatir solo en abstracto, así la decisión se basa en evidencia y no en jerarquía ni en quién argumenta mejor. Si el spike no despeja la duda, documento el trade-off (rendimiento vs. mantenibilidad, por ejemplo) y escalo la decisión al arquitecto o al dueño del dominio, dejando registro para futuras decisiones similares.
 
 ## 7. Situacional / cierre
 
 **30. Cuéntame de un proyecto de integración desafiante que hayas liderado.**
+
 Lideré la integración de un canal digital con el core bancario vía una capa de microservicios REST con caché y circuit breakers, reduciendo tiempos de respuesta en más de 40% y eliminando acoplamiento directo al legado.
 
 ---
 # Otras Preguntas
 
 ## Contract-first
+
 El enfoque Contract-first (o contrato primero) es una metodología de desarrollo de software donde se diseña y define la interfaz o el contrato de una API antes de escribir cualquier código de programación o lógica de negocio.
 
 ## Qué es Contract-first
@@ -251,8 +290,11 @@ Aquí tienes 5 diferencias clave y breves entre ambas arquitecturas:
    - si un microservicio falla, los demás siguen funcionando.
 
 # La resiliencia
+
 La resiliencia en software es la capacidad de un sistema para soportar fallos, recuperarse rápidamente y mantener su funcionamiento principal ante interrupciones, errores o picos de tráfico inesperados.
+
 ## Características Principales
+
 - **Tolerancia a fallos:** El sistema no se desploma por completo si un componente secundario deja de funcionar.
 - **Recuperación automática:** Vuelve a la normalidad en poco tiempo tras un error.
 - **Degradación elegante:** Si una parte falla, reduce funciones específicas en vez de apagar todo el servicio.
@@ -263,7 +305,10 @@ La resiliencia en software es la capacidad de un sistema para soportar fallos, r
 - **Tiempo de espera (Timeout):** Cancela una tarea si tarda demasiado en responder para liberar recursos.
 
 # La idempotencia
-Garantizo la idempotencia mediante la implementación de Identificadores Únicos de Transacción (Idempotency Keys) generados por el cliente. Al recibir una petición, el sistema verifica en una base de datos centralizada o caché distribuida (como Redis) si ese ID ya fue procesado. Si el ID ya existe, se retorna directamente el resultado almacenado de la primera ejecución sin duplicar la lógica de negocio. Si no existe, se procesa la transacción y se registra el ID junto con su resultado en una operación atómica.
+- Garantizo la idempotencia mediante la implementación de Identificadores Únicos de Transacción (Idempotency Keys) generados por el cliente. 
+- Al recibir una petición, el sistema verifica en una base de datos centralizada o caché distribuida (como Redis) si ese ID ya fue procesado. 
+- Si el ID ya existe, se retorna directamente el resultado almacenado de la primera ejecución sin duplicar la lógica de negocio. 
+- Si no existe, se procesa la transacción y se registra el ID junto con su resultado en una operación atómica.
 
 # APIGEE
 
@@ -271,13 +316,17 @@ Garantizo la idempotencia mediante la implementación de Identificadores Únicos
 
 He estudiado y seguido de cerca soluciones populares del mercado como Kong, AWS API Gateway y Apigee, comprendiendo sus casos de uso. Si el proyecto lo requiere, estoy completamente capacitado para asumir su configuración y despliegue apoyándome en esta base teórica."
 
-
-
 ----
 
 # Open Banking, ISO 20022 o BIAN en BCI
 
-Sí, esa pregunta guarda relación directa con la modernización tecnológica de la industria financiera y con las iniciativas digitales que impulsa el Banco Bci en Chile.¿Por qué se relacionan estos conceptos con Bci?Open Banking (Banca Abierta): Bci es pionero y referente en Chile en la implementación de este modelo. Cuenta con herramientas como el Bci API Market y su plataforma 360 Connect, que permite a las empresas integrar saldos y movimientos de otros bancos de forma centralizada.ISO 20022: Es el estándar mundial para el intercambio electrónico de datos entre instituciones financieras. Los bancos modernos, incluido Bci, lo adoptan para homologar pagos internacionales y locales con mayor cantidad de datos y seguridad.BIAN (Banking Industry Architecture Network): Es un marco global de arquitectura de microservicios para la banca. Muchas entidades que realizan transformaciones digitales profundas —como la estrategia de innovación de Bci— usan BIAN como guía para estructurar sus sistemas internos.
+Sí, esa pregunta guarda relación directa con la modernización tecnológica de la industria financiera y con las iniciativas digitales que impulsa el Banco Bci en Chile.
+
+**¿Por qué se relacionan estos conceptos con Bci?**
+
+- **Open Banking (Banca Abierta):** Bci es pionero y referente en Chile en la implementación de este modelo. Cuenta con herramientas como el Bci API Market y su plataforma 360 Connect, que permite a las empresas integrar saldos y movimientos de otros bancos de forma centralizada.
+- **ISO 20022:** Es el estándar mundial para el intercambio electrónico de datos entre instituciones financieras. Los bancos modernos, incluido Bci, lo adoptan para homologar pagos internacionales y locales con mayor cantidad de datos y seguridad.
+- **BIAN (Banking Industry Architecture Network):** Es un marco global de arquitectura de microservicios para la banca. Muchas entidades que realizan transformaciones digitales profundas —como la estrategia de innovación de Bci— usan BIAN como guía para estructurar sus sistemas internos.
 
 
 # El gobierno de APIs (API Governance)
@@ -286,10 +335,13 @@ El gobierno de APIs (API Governance) es el conjunto de normas, prácticas y herr
 # rate limiting 
 rate limiting (o limitación de velocidad) es una técnica que controla el número máximo de peticiones que un cliente puede hacer a un servidor o API en un periodo de tiempo determinado.
 
+    APIS
 
-# APIS
-es un mecanismo que permiten a 2 componentes de softwares comunicarse entre si mediante un conjunto de definiciones y protocolos.
+    es un mecanismo que permiten a 2 componentes de softwares comunicarse entre si mediante un conjunto de definiciones y protocolos.
 
 - **API (Interfaz de Programación de Aplicaciones):** El canal de comunicación que permite a una aplicación pedir datos o servicios a otra.
 
-- **REST (Transferencia de Estado Representacional):** Un estilo arquitectónico que hace que las APIs sean ligeras, rápidas y usen la estructura estándar de
+- **REST (Transferencia de Estado Representacional):** Un estilo arquitectónico que hace que las APIs sean ligeras, rápidas y usen la estructura estándar de internet.
+
+---
+
