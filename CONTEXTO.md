@@ -344,4 +344,24 @@ rate limiting (o limitación de velocidad) es una técnica que controla el núme
 - **REST (Transferencia de Estado Representacional):** Un estilo arquitectónico que hace que las APIs sean ligeras, rápidas y usen la estructura estándar de internet.
 
 ---
+ # SOA vs ESB
+
+- **SOA** es un enfoque de diseño de software donde los servicios se comunican de forma independiente, 
+- **ESB** es la herramienta o bus central que ayuda a conectar esos servicios.
+
+
+## ¿Qué es SOA?
+- **Concepto:** Es la Arquitectura Orientada a Servicios (Service-Oriented Architecture).
+- **Función:** Define cómo organizar los componentes de software en servicios independientes y reutilizables.
+- **Objetivo:** Permitir que distintos sistemas de una empresa intercambien datos y funciones mediante interfaces comunes.
+
+## ¿Qué es ESB?
+- **Concepto:** Es el Bus de Servicio Empresarial (Enterprise Service Bus).
+- **Función:** Es un patrón de software o middleware centralizado.
+- **Objetivo:** Conectar aplicaciones para que se comuniquen entre sí, transformando datos y adaptando protocolos sin que los sistemas se conecten de forma directa.
+
+## Diferencias Principales
+- **Naturaleza:** SOA es un concepto de diseño (el "qué" hacer), y ESB es un componente tecnológico o infraestructura (el "cómo" implementarlo).
+- **Alcance:** Puedes aplicar principios de SOA sin usar un ESB, pero un ESB se creó específicamente para cumplir con las necesidades de integración de una SOA.
+- **Dependencia:** SOA existe por sí misma como estilo arquitectónico; un ESB depende de las aplicaciones y servicios que debe comunicar.
 
