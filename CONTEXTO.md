@@ -80,6 +80,27 @@ Video de referencia: [Microservices Best Practices](https://www.youtube.com/watc
 - Monolito para dominios simples o equipos pequeños; 
 - Microservicios cuando se necesita escalar, desplegar independiente y aislar fallas.
 
+**MONOLITO VS MICROSERVICIO**
+Aquí tienes 5 diferencias clave y breves entre ambas arquitecturas:
+
+**Estructura:**
+   - El monolito es un único bloque de código; 
+   - los microservicios son componentes independientes.
+
+**Despliegue:** 
+   - El monolito se despliega todo junto; 
+   - los microservicios se despliegan por separado.
+** Escalabilidad:** 
+   - El monolito escala todo el sistema; 
+   - los microservicios escalan solo la parte necesaria.
+** Tecnología:** 
+   - El monolito usa una misma tecnología; 
+   - los microservicios permiten usar diferentes lenguajes.
+**Fallas:** 
+   - Si el monolito falla, cae todo; 
+   - si un microservicio falla, los demás siguen funcionando.
+
+
 **8. ¿Cómo abordas el versionado de APIs sin romper a los consumidores?**
 
 Versionado en la URL o header, manteniendo compatibilidad hacia atrás y períodos de convivencia antes de deprecar. 
@@ -348,26 +369,6 @@ El enfoque Contract-first (o contrato primero) es una metodología de desarrollo
     - Open API (Swagger) Es un estandar codigo abierto para describir, documentar y visualizar los endpoints RESTful.
     - Permite a los desarrolladores definir la estructura, los endpoints, los formatos de solicitud y respuesta y otros detalle inmportantes de una API. 
 
-## MONOLITO VS MICROSERVICIO
-
-Aquí tienes 5 diferencias clave y breves entre ambas arquitecturas:
-
-**Estructura:**
-   - El monolito es un único bloque de código; 
-   - los microservicios son componentes independientes.
-
-**Despliegue:** 
-   - El monolito se despliega todo junto; 
-   - los microservicios se despliegan por separado.
-** Escalabilidad:** 
-   - El monolito escala todo el sistema; 
-   - los microservicios escalan solo la parte necesaria.
-** Tecnología:** 
-   - El monolito usa una misma tecnología; 
-   - los microservicios permiten usar diferentes lenguajes.
-**Fallas:** 
-   - Si el monolito falla, cae todo; 
-   - si un microservicio falla, los demás siguen funcionando.
 
 # La resiliencia
 
