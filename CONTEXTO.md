@@ -40,6 +40,13 @@ Porque Bci lidera la transformación digital en Chile y quiero aportar mi experi
 
 Es la capa que conecta sistemas heterogéneos (core, canales, terceros) mediante APIs y microservicios estandarizados, habilitando agilidad y reutilización.
 
+**Una plataforma de integración (como iPaaS o un bus de servicios)** es un software centralizado que conecta diferentes aplicaciones, sistemas y datos dispersos para que funcionen como un solo conjunto.
+**Rol en la transformación digital**
+- **Interoperabilidad:** Permite que sistemas antiguos y modernos compartan información en tiempo real sin romper procesos.
+- **Automatización:** Conecta flujos de trabajo entre departamentos para reducir tareas manuales y errores.
+- **Visión unificada de datos:** Centraliza la información para mejorar la toma de decisiones y el análisis con herramientas modernas.
+- **Agilidad:** Acelera la creación de nuevos servicios digitales y la adaptación a las necesidades del mercado.
+
 **3. Cuéntame tu trayectoria: ¿cómo llegaste a especializarte en integraciones/APIs?**
 
 Empecé en desarrollo backend, migré a integración por SOA/ESB, y con el tiempo me especialicé en APIs REST y microservicios cloud-native.
@@ -52,7 +59,9 @@ Me atrae el nivel de exigencia técnica y de seguridad que exige el rubro financ
 
 **5. ¿Qué principios sigues al diseñar una API REST?**
 
-Contract-first, diseño orientado a recursos, versionado semántico y documentación con OpenAPI/Swagger. Como referencia, suelo recomendar estos dos videos:
+Contract-first, diseño orientado a recursos, versionado semántico y documentación con OpenAPI/Swagger. 
+
+Como referencia, suelo recomendar estos dos videos:
 - [Deep Dive into REST API Design and Implementation Best Practices](https://www.youtube.com/watch?v=7nm1pYuKAhY)
 - [9 Must-Know REST API Design Principles for Developers](https://www.youtube.com/watch?v=pJ83mmqcvoQ)
 
