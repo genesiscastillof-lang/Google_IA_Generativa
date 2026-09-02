@@ -149,7 +149,11 @@ OAuth2/OIDC, mTLS, cifrado en tránsito y reposo, tokenización de datos sensibl
 OAuth2/OIDC, mTLS, cifrado, tokenización, scopes
 Seguridad en capas: transporte, autenticación, autorización y datos.
 
-    Para asegurar una API que maneja datos financieros sensibles, se debe implementar una estrategia de defensa en profundidad. Esto significa aplicar múltiples capas de seguridad tanto en la autenticación, la infraestructura como en el ciclo de vida del dato.
+    Para asegurar una API que maneja datos financieros sensibles,
+    se debe implementar una estrategia de defensa en profundidad. 
+    Esto significa aplicar múltiples capas de seguridad tanto en la
+    autenticación, la infraestructura como en el ciclo de vida del 
+    dato.
 
 **15. ¿Qué sabes sobre Open Banking, ISO 20022 o BIAN?**
 
