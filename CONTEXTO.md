@@ -8,7 +8,8 @@ responder a la entrevista para el puesto mencionado con el gerente TI integracio
 
 **EL CONTEXTO**
 
-segun el anuncio del empleo, dice asi:
+Segun el anuncio del empleo, dice asi:
+
 Diseñar e implementar los microservicios y APIs que permiten habilitar la plataforma de Integración del banco, con el fin de dar soporte al proceso de transformación digital en Bci, permitiendo que la corporación pueda contar con una plataforma basada en componentes independientes, autónomos y escalables, entregados de forma rápida y oportuna, con foco en la excelencia y utilización óptima de recursos.
 
 *Las funciones son:*
