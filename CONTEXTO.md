@@ -40,7 +40,9 @@ Porque Bci lidera la transformación digital en Chile y quiero aportar mi experi
 
 Es la capa que conecta sistemas heterogéneos (core, canales, terceros) mediante APIs y microservicios estandarizados, habilitando agilidad y reutilización.
 
-**Una plataforma de integración (como iPaaS o un bus de servicios)** es un software centralizado que conecta diferentes aplicaciones, sistemas y datos dispersos para que funcionen como un solo conjunto.
+**Una plataforma de integración (como iPaaS o un bus de servicios)**
+- Es un software centralizado que conecta diferentes aplicaciones, sistemas y datos dispersos para que funcionen como un solo conjunto.
+
 **Rol en la transformación digital**
 - **Interoperabilidad:** Permite que sistemas antiguos y modernos compartan información en tiempo real sin romper procesos.
 - **Automatización:** Conecta flujos de trabajo entre departamentos para reducir tareas manuales y errores.
@@ -89,13 +91,25 @@ Síncrono (REST) para consultas en tiempo real; eventos/colas (Kafka, RabbitMQ) 
 
 **10. ¿Cómo garantizas idempotencia y manejo de errores en transacciones distribuidas?**
 
-Uso de idempotency keys, patrones saga/compensación y manejo explícito de reintentos con backoff. 
+    Uso de idempotency keys, patrones saga/compensación y manejo explícito de reintentos con backoff. 
+
+*la idempotencia*
+- Garantizo la idempotencia mediante la implementación de Identificadores Únicos de Transacción (Idempotency Keys) generados por el cliente. 
+- Al recibir una petición, el sistema verifica en una base de datos centralizada o caché distribuida (como Redis) si ese ID ya fue procesado. 
+- Si el ID ya existe, se retorna directamente el resultado almacenado de la primera ejecución sin duplicar la lógica de negocio. 
+- Si no existe, se procesa la transacción y se registra el ID junto con su resultado en una operación atómica.
 
 Video tutorial recomendado: [Saga Pattern: Mastering Distributed Transactions](https://m.youtube.com/watch?v=iJT8ehN8A_I).
 
 **11. ¿Qué experiencia tienes con API Gateways?**
 
-He trabajado con Apigee/Kong para gestión de tráfico, seguridad, rate limiting y analítica de consumo.
+    He trabajado con Apigee para gestión de tráfico, seguridad, rate limiting y analítica de consumo.
+
+*APIGEE*
+Tengo un conocimiento sólido y teórico sobre el funcionamiento y la arquitectura de los API Gateways, aunque todavía no me ha tocado implementarlos en un entorno de producción real.
+Entiendo perfectamente que actúan como un punto de entrada único para microservicios, encargándose de tareas críticas como la gestión de tráfico (rate limiting), autenticación (OAuth/JWT), enrutamiento de peticiones y abstracción de la arquitectura interna.
+
+He estudiado y seguido de cerca soluciones populares del mercado como Apigee, comprendiendo sus casos de uso. 
 
 **12. ¿Cómo diseñarías un microservicio expuesto a clientes internos y externos?**
 
@@ -123,13 +137,21 @@ Conozco los principios de Open Banking (consentimiento, APIs estandarizadas) y m
 Consentimiento, APIs estandarizadas, modelo de referencia BIAN
 Estándares clave para interoperabilidad en servicios financieros.
 
+**Open Banking, ISO 20022 o BIAN en BCI**
+
+- **Open Banking (Banca Abierta):** Bci es pionero y referente en Chile en la implementación de este modelo. Cuenta con herramientas como el Bci API Market y su plataforma 360 Connect, que permite a las empresas integrar saldos y movimientos de otros bancos de forma centralizada.
+- **ISO 20022:** Es el estándar mundial para el intercambio electrónico de datos entre instituciones financieras. Los bancos modernos, incluido Bci, lo adoptan para homologar pagos internacionales y locales con mayor cantidad de datos y seguridad.
+- **BIAN (Banking Industry Architecture Network):** Es un marco global de arquitectura de microservicios para la banca. Muchas entidades que realizan transformaciones digitales profundas —como la estrategia de innovación de Bci— usan BIAN como guía para estructurar sus sistemas internos.
+
 **16. ¿Cómo manejas alta disponibilidad en un microservicio crítico?**
 
 Con redundancia, circuit breakers, timeouts, health checks y diseño stateless para escalar horizontalmente.
 
 **17. ¿Qué consideraciones de cumplimiento normativo tomas en cuenta?**
 
-Trazabilidad de datos, minimización de información sensible expuesta y cumplimiento de normativa de protección de datos vigente.
+- Trazabilidad de datos, 
+- minimización de información sensible expuesta y 
+- cumplimiento de normativa de protección de datos vigente.
 
 ## 4. Delivery continuo y DevOps
 
@@ -314,30 +336,7 @@ La resiliencia en software es la capacidad de un sistema para soportar fallos, r
 - **Cortafuegos de circuitos (Circuit Breaker):** Detiene peticiones a un servicio dañado para evitar que colapse todo el sistema.
 - **Tiempo de espera (Timeout):** Cancela una tarea si tarda demasiado en responder para liberar recursos.
 
-# La idempotencia
-- Garantizo la idempotencia mediante la implementación de Identificadores Únicos de Transacción (Idempotency Keys) generados por el cliente. 
-- Al recibir una petición, el sistema verifica en una base de datos centralizada o caché distribuida (como Redis) si ese ID ya fue procesado. 
-- Si el ID ya existe, se retorna directamente el resultado almacenado de la primera ejecución sin duplicar la lógica de negocio. 
-- Si no existe, se procesa la transacción y se registra el ID junto con su resultado en una operación atómica.
-
-# APIGEE
-
-"Tengo un conocimiento sólido y teórico sobre el funcionamiento y la arquitectura de los API Gateways, aunque todavía no me ha tocado implementarlos en un entorno de producción real.Entiendo perfectamente que actúan como un punto de entrada único para microservicios, encargándose de tareas críticas como la gestión de tráfico (rate limiting), autenticación (OAuth/JWT), enrutamiento de peticiones y abstracción de la arquitectura interna.
-
-He estudiado y seguido de cerca soluciones populares del mercado como Kong, AWS API Gateway y Apigee, comprendiendo sus casos de uso. Si el proyecto lo requiere, estoy completamente capacitado para asumir su configuración y despliegue apoyándome en esta base teórica."
-
 ----
-
-# Open Banking, ISO 20022 o BIAN en BCI
-
-Sí, esa pregunta guarda relación directa con la modernización tecnológica de la industria financiera y con las iniciativas digitales que impulsa el Banco Bci en Chile.
-
-**¿Por qué se relacionan estos conceptos con Bci?**
-
-- **Open Banking (Banca Abierta):** Bci es pionero y referente en Chile en la implementación de este modelo. Cuenta con herramientas como el Bci API Market y su plataforma 360 Connect, que permite a las empresas integrar saldos y movimientos de otros bancos de forma centralizada.
-- **ISO 20022:** Es el estándar mundial para el intercambio electrónico de datos entre instituciones financieras. Los bancos modernos, incluido Bci, lo adoptan para homologar pagos internacionales y locales con mayor cantidad de datos y seguridad.
-- **BIAN (Banking Industry Architecture Network):** Es un marco global de arquitectura de microservicios para la banca. Muchas entidades que realizan transformaciones digitales profundas —como la estrategia de innovación de Bci— usan BIAN como guía para estructurar sus sistemas internos.
-
 
 # El gobierno de APIs (API Governance)
 El gobierno de APIs (API Governance) es el conjunto de normas, prácticas y herramientas que utiliza una organización para gestionar todo el ciclo de vida de sus APIs de forma centralizada.Sus objetivos principales son:Estandarizar: Garantizar que todas las APIs sigan las mismas reglas de diseño, documentación y seguridad.Evitar duplicidad: Asegurar que no se creen APIs que hagan lo mismo, optimizando recursos.Garantizar seguridad: Controlar quién accede a los datos y proteger la información de la empresa.Facilitar el uso: Lograr que sean fáciles de descubrir y reutilizar por otros desarrolladores.En resumen, es poner orden, control y calidad al ecosistema de APIs de una empresa para que crezca de forma segura y eficiente.
