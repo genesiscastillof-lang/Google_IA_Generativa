@@ -167,6 +167,11 @@ Automatizando pruebas y certificación, usando feature flags y despliegues progr
 
 Pruebas unitarias, contract testing (Pact) e integración automatizada en el pipeline antes de cada release.
 
+**Pruebas de Contrato (Contract Testing)**
+- **Objetivo:** Asegurar que los cambios en el proveedor de la API no rompan la integración con el consumidor.
+- **Pact / OpenAPI:** Definir acuerdos formales sobre la estructura exacta de los endpoints, encabezados y payloads.
+- **Detección temprana:** Automatizar la validación del contrato en el pipeline de CI/CD para detectar cambios disruptivos (breaking changes) antes del despliegue.
+
 **21. ¿Experiencia con contenedores y orquestadores?**
 
 Sí, uso Docker para empaquetar servicios y Kubernetes para orquestación, escalado y auto-healing.
