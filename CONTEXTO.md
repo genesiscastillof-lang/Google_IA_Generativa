@@ -184,7 +184,19 @@ Con versionado de artefactos y despliegues blue-green/canary que permiten revert
 
 **23. ¿Qué entiendes por "gobierno de APIs"?**
 
-Procesos claros de certificación, roles definidos (dueño de API, arquitecto, QA) y tooling que automatice validaciones de estándares.
+**El gobierno de APIs (API Governance)**
+El gobierno de APIs (API Governance) es el conjunto de normas, prácticas y herramientas que utiliza una organización para gestionar todo el ciclo de vida de sus APIs de forma centralizada.
+
+*Sus objetivos principales son:*
+- **Estandarizar:** Garantizar que todas las APIs sigan las mismas reglas de diseño, documentación y seguridad.
+- **Evitar duplicidad:** Asegurar que no se creen APIs que hagan lo mismo, optimizando recursos.
+- **Garantizar seguridad:** Controlar quién accede a los datos y proteger la información de la empresa.
+- **Facilitar el uso:** Lograr que sean fáciles de descubrir y reutilizar por otros desarrolladores.
+
+En resumen, es poner orden, control y calidad al ecosistema de APIs de una empresa para que crezca de forma segura y eficiente.
+
+
+
 
 **24. ¿Cómo aseguras que un microservicio cumpla estándares antes de sumarse al catálogo?**
 
@@ -343,8 +355,6 @@ La resiliencia en software es la capacidad de un sistema para soportar fallos, r
 
 ----
 
-# El gobierno de APIs (API Governance)
-El gobierno de APIs (API Governance) es el conjunto de normas, prácticas y herramientas que utiliza una organización para gestionar todo el ciclo de vida de sus APIs de forma centralizada.Sus objetivos principales son:Estandarizar: Garantizar que todas las APIs sigan las mismas reglas de diseño, documentación y seguridad.Evitar duplicidad: Asegurar que no se creen APIs que hagan lo mismo, optimizando recursos.Garantizar seguridad: Controlar quién accede a los datos y proteger la información de la empresa.Facilitar el uso: Lograr que sean fáciles de descubrir y reutilizar por otros desarrolladores.En resumen, es poner orden, control y calidad al ecosistema de APIs de una empresa para que crezca de forma segura y eficiente.
 
 # rate limiting 
 rate limiting (o limitación de velocidad) es una técnica que controla el número máximo de peticiones que un cliente puede hacer a un servidor o API en un periodo de tiempo determinado.
