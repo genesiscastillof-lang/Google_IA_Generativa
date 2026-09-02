@@ -110,7 +110,8 @@ Versionado en la URL o header, manteniendo compatibilidad hacia atrás y períod
 
 **9. ¿Qué patrones usas para la comunicación entre microservicios?**
 
-Síncrono (REST) para consultas en tiempo real; eventos/colas (Kafka, RabbitMQ) para desacoplar procesos y mejorar resiliencia.
+Síncrono (REST) para consultas en tiempo real; 
+eventos/colas (Kafka, RabbitMQ) para desacoplar procesos y mejorar resiliencia.
 
 **10. ¿Cómo garantizas idempotencia y manejo de errores en transacciones distribuidas?**
 
@@ -428,6 +429,9 @@ rate limiting (o limitación de velocidad) es una técnica que controla el núme
 - **Dependencia:** SOA existe por sí misma como estilo arquitectónico; un ESB depende de las aplicaciones y servicios que debe comunicar.
 
 ---
+# La inteligencia artificial (IA)
+
+La inteligencia artificial (IA) es un campo de la informática que crea sistemas y máquinas capaces de simular la inteligencia humana para resolver problemas y realizar tareas avanzadas.
 
 ## ¿que es la IA Generativa?
 
