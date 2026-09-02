@@ -389,3 +389,16 @@ rate limiting (o limitación de velocidad) es una técnica que controla el núme
 - **Alcance:** Puedes aplicar principios de SOA sin usar un ESB, pero un ESB se creó específicamente para cumplir con las necesidades de integración de una SOA.
 - **Dependencia:** SOA existe por sí misma como estilo arquitectónico; un ESB depende de las aplicaciones y servicios que debe comunicar.
 
+---
+
+## ¿que es la IA Generativa?
+
+hace referencia al uso de IA para crear contenido nuevo, como texto, imagenes musica audio y videos.
+
+La IA generativa usa modelos de base (modelos de IA grandes) que pueden realizar varias tareas a la vez y de manera predeterminada, como resumnenes, preguntas y respuestas, Clasificacion y mucho mas.
+
+Ademas con el entrenamineto minimo necesario, los modelos de base se pueden adaptar a caso de usos segmentados con muy pocos ejemplos de datos.
+
+## ¿como funciona la IA generativa?
+
+la IA generativa usa modelo de AA **(Aprendizaje automatico)** para aprender patrones y las relaciones en un conjunto de ideas de datos de contenido creado por humanos y las etiquetas correspondientes, Luego aprende a generar contenido similiar al creado por humanos y etiquetado con las misma etiquetas.
