@@ -90,16 +90,18 @@ Aquí tienes 5 diferencias clave y breves entre ambas arquitecturas:
 **Despliegue:** 
    - El monolito se despliega todo junto; 
    - los microservicios se despliegan por separado.
+
 ** Escalabilidad:** 
    - El monolito escala todo el sistema; 
    - los microservicios escalan solo la parte necesaria.
+
 ** Tecnología:** 
    - El monolito usa una misma tecnología; 
    - los microservicios permiten usar diferentes lenguajes.
+
 **Fallas:** 
    - Si el monolito falla, cae todo; 
    - si un microservicio falla, los demás siguen funcionando.
-
 
 **8. ¿Cómo abordas el versionado de APIs sin romper a los consumidores?**
 
