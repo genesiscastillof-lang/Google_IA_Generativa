@@ -23,10 +23,10 @@
 
 4.- *Una productora audiovisual quiere convertir guiones de vídeo extensos en resúmenes narrados, coherentes y de calidad profesional, con imágenes sincronizadas. Necesitan un modelo de IA generativa que les ayude a generar vídeos a partir de textos. ¿Qué modelo de la Fundación Google deberían explorar?*
 
-Imagen
-Veo
-Gemma
-Chirp
+- Imagen
+- Veo
+- Gemma
+- Chirp
 
 5.- *Una empresa de servicios financieros está diseñando una aplicación para clientes que utiliza IA generativa para gestionar consultas, generar informes y activar procesos internos como programar citas o enviar recordatorios. Planean integrar agentes de IA para gestionar estas interacciones. ¿Cuál es una ventaja clave de usar agentes de IA en este contexto?*
 
@@ -58,17 +58,17 @@ Chirp
 
 9.- *¿Cuál de las siguientes opciones describe mejor por qué la IA segura es esencial para el éxito empresarial a largo plazo de una implementación de IA generativa en un entorno empresarial?*
 
-Garantiza la eliminación total del sesgo en los modelos de IA.
-Protege la propiedad intelectual y mitiga los riesgos legales, reputacionales y operativos.
-Garantiza el cumplimiento total de las normativas de privacidad de datos.
-Aumenta la precisión y el rendimiento del modelo en todos los casos extremos.
+- Garantiza la eliminación total del sesgo en los modelos de IA.
+- Protege la propiedad intelectual y mitiga los riesgos legales, reputacionales y operativos.
+- Garantiza el cumplimiento total de las normativas de privacidad de datos.
+- Aumenta la precisión y el rendimiento del modelo en todos los casos extremos.
 
 10.- *Una empresa ha implementado un modelo de IA generativa para la atención al cliente, capaz de resumir conversaciones y sugerir respuestas. Un atacante intenta alterar sutilmente los datos de entrenamiento del modelo inyectando ejemplos maliciosos imperceptibles. ¿Cuál de las siguientes amenazas a la seguridad de la IA intenta explotar principalmente este atacante?*
 
-Model Inversion Attack
-Membership Inference Attack
-Prompt Injection
-Data Poisoning Attack
+- Model Inversion Attack
+- Membership Inference Attack
+- Prompt Injection
+- Data Poisoning Attack
 
 11.- *La aplicación de IA generativa de una empresa está experimentando ocasionalmente "alucinaciones", en las que el modelo genera información incorrecta o sin sentido. Este problema resulta especialmente preocupante para consultas de asesoramiento financiero de alta sensibilidad. Según las prácticas recomendadas por Google, ¿qué medida proactiva debería priorizar el responsable de IA generativa para mitigar estas alucinaciones y garantizar una implementación responsable de la IA?*
 
@@ -79,25 +79,24 @@ Data Poisoning Attack
 
 12.- *Un estudio de producción cinematográfica está trabajando en una serie de fantasía y necesita generar arte conceptual fotorrealista de alta resolución directamente a partir de fragmentos del guion. El equipo quiere experimentar con diversos estilos artísticos y entornos antes de pasar al modelado 3D. ¿Qué modelo de la Fundación Google deberían usar para convertir las indicaciones de texto en imágenes de alta fidelidad?*
 
-Gemma
-Imagen
-Gemini
-Veo
+- Gemma
+- Imagen
+- Gemini
+- Veo
 
 13.- *Una empresa ha finalizado el entrenamiento de un modelo de IA generativa y ahora desea ponerlo a disposición para realizar predicciones en tiempo real con baja latencia. ¿Qué herramienta es la más adecuada para la implementación del modelo en este escenario?*
 
-BigQuery ML
-TensorBoard
-Vertex AI Prediction
-Dataplex
-
+- BigQuery ML
+- TensorBoard
+- Vertex AI Prediction
+- Dataplex
 
 14.- *Una gran empresa desea desarrollar una solución de IA generativa personalizada para automatizar la creación de contenido para su departamento de marketing. Disponen de una cantidad considerable de datos de marketing propios (texto, imágenes, directrices de marca) que desean utilizar para entrenar y optimizar los modelos. Además, requieren sólidas capacidades de MLOps, incluyendo el control de versiones de los modelos, la integración y el despliegue continuos (CI/CD) para las actualizaciones de los modelos y la monitorización del rendimiento de los modelos en producción. ¿Qué servicio de Google Cloud ofrece el entorno más completo para estos requisitos?*
 
-Cloud Build
-Vertex AI
-Google Kubernetes Engine (GKE)
-Google Cloud Storage
+- Cloud Build
+- Vertex AI
+- Google Kubernetes Engine (GKE)
+- Google Cloud Storage
 
 15.- *Una organización sanitaria está desarrollando un asistente para médicos basado en LLM. Este asistente debe proporcionar diagnósticos y recomendaciones de tratamiento según las últimas guías médicas, los historiales clínicos electrónicos (HCE) de los pacientes y la investigación propia de la organización. ¿Qué combinación de tipos de datos de referencia es la más importante para este caso de uso?*
 
@@ -115,10 +114,10 @@ Google Cloud Storage
 
 17.- *Un equipo de desarrollo empresarial integra una herramienta de IA generativa en su entorno de desarrollo integrado (IDE) para automatizar tareas repetitivas como la generación de código estándar, la traducción de pseudocódigo a Python y la sugerencia de soluciones para errores de programación comunes. ¿Qué tipo de agente de IA se está utilizando?*
 
-Task automation agent
-Workflow agent
-Code agent
-Chat agent
+- Task automation agent
+- Workflow agent
+- Code agent
+- Chat agent
 
 18.- *Una empresa multinacional desea implementar IA generativa manteniendo la flexibilidad para alternar entre diferentes modelos de IA y evitar quedar atrapada en un ecosistema propietario. ¿Qué funcionalidad de Google Cloud se adapta mejor a este objetivo?*
 
@@ -136,10 +135,10 @@ Chat agent
 
 20.- *Un equipo ajusta un modelo de IA generativa para generar respuestas de atención al cliente. Lo entrenan con un conjunto de datos de correos electrónicos y respuestas de soporte. Sin querer, el conjunto de datos de entrenamiento incluye conversaciones de correo electrónico futuras completas, incluidos mensajes de resolución final que se desconocían al recibir la consulta inicial del cliente. El modelo comienza a generar respuestas que dan por sentado el resultado de problemas sin resolver, lo que provoca confusión. ¿Cuál es la causa principal de este comportamiento?*
 
-Alucinaciones
-Fallo de ingeniería inmediato
-Fuga de datos
-Objetivos desalineados
+- Alucinaciones
+- Fallo de ingeniería inmediato
+- Fuga de datos
+- Objetivos desalineados
 
 21.- *Tu equipo está desarrollando un asistente de atención al cliente mediante un modelo de IA generativa en Google Cloud. Para garantizar que las respuestas sean precisas y se basen en la documentación propietaria de la empresa, planeas implementar la vinculación con Vertex AI Search. ¿Cuál de las siguientes opciones describe mejor cómo la función predefinida de Generación Aumentada por Recuperación (RAG) de Vertex AI Search ayuda en este escenario?*
 
@@ -171,10 +170,10 @@ Objetivos desalineados
 
 25.- *Un hospital integra un agente digital en su sistema de comunicación interna para ayudar a enfermeros y médicos respondiendo a consultas sobre historiales clínicos, horarios de turnos y protocolos. El agente comprende el lenguaje natural y responde en tiempo real, adaptándose a las necesidades de cada miembro del personal médico. ¿Qué tipo de agente es este?*
 
-Workflow agent
-Conversational agent
-Robotic process automation agent
-Predictive agent
+- Workflow agent
+- Conversational agent
+- Robotic process automation agent
+- Predictive agent
 
 26.- *Una empresa multinacional de servicios financieros está implementando una solución de atención al cliente mediante chatbots de IA generativa. Los interesados ​​están preocupados por el daño a la reputación debido a posibles interpretaciones erróneas del modelo y respuestas sesgadas. ¿Cuál de las siguientes estrategias comerciales se ajusta mejor a los principios de IA responsable para mitigar estos riesgos?*
 
@@ -185,17 +184,17 @@ Predictive agent
 
 27.- *Una empresa global de telecomunicaciones desea implementar una solución de IA generativa que brinde soporte inteligente al cliente a través de canales de voz y chat. La empresa no planea desarrollar ni entrenar sus propios modelos, sino utilizar herramientas predefinidas que simplifiquen la complejidad del modelo, permitiendo al mismo tiempo la personalización específica del dominio. ¿Qué capa del panorama de la IA generativa se ajusta mejor al enfoque de la empresa?*
 
-Foundation models
-Applications
-AI agents
-Infrastructure
+- Foundation models
+- Applications
+- AI agents
+- Infrastructure
 
 28.- *Una empresa de logística global tiene datos dispersos en múltiples sistemas internos: seguimiento de envíos, atención al cliente y facturación. Los empleados suelen tener dificultades para obtener información específica y actualizada al responder a las consultas de los clientes, lo que genera ineficiencias y retrasos. La empresa desea implementar una solución de IA generativa que permita a los empleados formular preguntas en lenguaje natural y obtener respuestas inmediatas y contextuales extraídas de todas las fuentes internas. ¿Qué producto de Google Cloud es el más adecuado?*
 
-Google Agentspace
-Gemini Code Assist
-Duet AI for Developers
-Vertex AI Studio
+- Google Agentspace
+- Gemini Code Assist
+- Duet AI for Developers
+- Vertex AI Studio
 
 29.- *El equipo de comunicaciones de una organización sin fines de lucro necesita redactar correos electrónicos de difusión, generar ideas para publicaciones de blog y crear contenido para redes sociales con el fin de promocionar un próximo evento. Prefieren una solución rápida y sin código con asistencia de IA que les permita centrarse en la narrativa y la mensajería. ¿Qué herramienta compatible con Google Cloud deberían usar?*
 
@@ -249,17 +248,17 @@ Vertex AI Studio
 
 36.- *Un robot autónomo de almacén se entrena para recoger y apilar cajas de forma eficiente. Recibe una recompensa por cada tarea exitosa y una penalización por errores como dejar caer cajas o seleccionar artículos incorrectos. Con el tiempo, el robot adapta sus movimientos para maximizar el apilamiento exitoso. ¿Qué tipo de técnica de aprendizaje automático se está utilizando?*
 
-Aprendizaje por refuerzo
-Aprendizaje supervisado
-Aprendizaje generativo
-Aprendizaje por transferencia
+- Aprendizaje por refuerzo
+- Aprendizaje supervisado
+- Aprendizaje generativo
+- Aprendizaje por transferencia
 
 37.- *Un equipo de marketing se ve desbordado por la cantidad de documentos internos de ventas, fichas de productos y comentarios de clientes. Necesitan una solución con IA que les permita buscar en todos estos documentos y obtener respuestas precisas y contextualizadas al instante. La solución debe integrarse con sus repositorios de datos internos y estar optimizada para uso empresarial. ¿Qué producto de Google Cloud deberían usar?*
 
-Gemini app
-Vertex AI Search
-BigQuery
-NotebookLM
+- Gemini app
+- Vertex AI Search
+- BigQuery
+- NotebookLM
 
 38.- *Un equipo empresarial está desarrollando una aplicación de IA generativa utilizando un modelo base de Vertex AI. Durante las pruebas, el resultado suele ser genérico y no se ajusta a las expectativas específicas del dominio. ¿Cuál es la técnica más proactiva para abordar este problema?*
 
@@ -287,17 +286,17 @@ NotebookLM
 
 41.- *Un analista financiero necesita resumir rápidamente varios informes trimestrales de ganancias extensos (en formato PDF), extraer las cifras financieras clave y, posteriormente, generar una breve explicación en lenguaje natural sobre las tendencias de rendimiento de la empresa durante el último año. ¿Qué modelo de Google Cloud Foundation sería el más adecuado para esta combinación de tareas?*
 
-Veo
-Gemma
-Gemini
-Imagen
+- Veo
+- Gemma
+- Gemini
+- Imagen
 
 42.- *Una empresa global de comercio electrónico busca mejorar la interacción con sus clientes ofreciendo recomendaciones de productos altamente personalizadas y creando contenido de marketing único y adaptado a cada usuario. ¿Qué tipo de solución de IA generativa es la más adecuada para este objetivo empresarial?*
 
-Image Generation
-Text Generation for Personalized User Needs
-Data Augmentation
-Code Generation
+- Image Generation
+- Text Generation for Personalized User Needs
+- Data Augmentation
+- Code Generation
 
 43.- *Una empresa desea utilizar IA generativa para optimizar la documentación interna y las operaciones de soporte. Los interesados ​​están preocupados por si un único modelo generativo puede gestionar tareas diversas, como responder preguntas frecuentes, resumir informes y redactar correos electrónicos. ¿Qué explica mejor la idoneidad de los modelos de lenguaje a gran escala (LLM) para este caso de uso?*
 
@@ -311,10 +310,10 @@ Code Generation
 
 44.- *Un equipo de marketing necesita generar con frecuencia contenido creativo, como borradores de correo electrónico, publicaciones en redes sociales y diapositivas para presentaciones, pero carece de diseñadores gráficos o redactores internos para cada tarea. ¿Qué solución de IA generativa preconfigurada de Google Cloud puede potenciar significativamente el trabajo de este equipo al brindar asistencia de IA directamente en sus herramientas de productividad existentes?*
 
-Google Cloud Speech-to-Text API
-Duet AI for Google Workspace
-Vertex AI Model Garden
-Google Cloud Contact Center AI
+- Google Cloud Speech-to-Text API
+- Duet AI for Google Workspace
+- Vertex AI Model Garden
+- Google Cloud Contact Center AI
 
 45.- *Una empresa de logística de tamaño mediano desea integrar la IA generativa en sus flujos de trabajo de atención al cliente, pero carece de científicos de datos o ingenieros de aprendizaje automático. ¿Qué característica de las soluciones de IA de Google Cloud hace posible esta integración?*
 
@@ -325,19 +324,16 @@ Google Cloud Contact Center AI
 
 46.- *Una empresa de atención al cliente está desarrollando un agente digital para ayudar a los usuarios mediante una interfaz de chat. El agente puede interpretar el lenguaje natural, comprender la intención del usuario, mantener el contexto a lo largo de múltiples interacciones y responder de forma conversacional a preguntas sobre facturación, soporte y actualizaciones de cuenta. ¿Qué tipo de agente es este?*
 
-Creative agent
-Conversational agent
-Workflow agent
-Virtual assistant agent
+- Creative agent
+- Conversational agent
+- Workflow agent
+- Virtual assistant agent
 
 47.- *¿Cuál de los siguientes es el caso de uso más apropiado para la IA generativa dentro de una organización minorista?*
 
 - Creación de un sistema basado en reglas para los umbrales de inventario.
-
 - Generación de descripciones de productos personalizadas para un catálogo en línea.
-
 - Previsión de los ingresos del próximo trimestre utilizando datos históricos de ventas.
-
 - Optimización de las rutas de entrega en función de las condiciones del tráfico.
 
 48.- *Una empresa de medios quiere acelerar la creación de contenido generando titulares de noticias variados, publicaciones en redes sociales y artículos breves sobre temas de actualidad. Están considerando utilizar un Modelo de Lenguaje Grande (LLM). ¿Cuál es un concepto fundamental que permite a un LLM realizar tareas de generación de texto tan diversas?*
@@ -352,33 +348,29 @@ Virtual assistant agent
 
 49.- *Un equipo de marketing está utilizando un modelo de IA generativa para generar ideas de eslóganes creativos para el lanzamiento de un nuevo producto. Sin embargo, consideran que los resultados iniciales son demasiado genéricos y similares. Como líder en IA generativa, ¿qué ajuste de parámetros de muestreo recomendaría para fomentar eslóganes más diversos e innovadores?*
 
-Decrease the temperature to 0.1.
-Increase the maxOutputTokens to 500.
-Implement a frequency penalty.
-Increase the top-p (nucleus sampling) value to 0.95.
+- Decrease the temperature to 0.1.
+- Increase the maxOutputTokens to 500.
+- Implement a frequency penalty.
+- Increase the top-p (nucleus sampling) value to 0.95.
 
 50.- *Una gran empresa de comercio electrónico desea reducir los tiempos de espera en la atención al cliente sin comprometer la calidad de las respuestas. La empresa dispone de datos históricos de chat estructurados y está interesada en implementar una solución que pueda escalar rápidamente sin necesidad de un entrenamiento exhaustivo del modelo. ¿Cuál de las siguientes soluciones de IA generativa se ajusta mejor a esta necesidad empresarial?*
 
 - Modelo lingüístico de gran tamaño optimizado y entrenado con datos de productos de código abierto.
-
 - Modelo de generación de código optimizado con documentación interna para desarrolladores.
-
 - Modelo lingüístico de gran tamaño preentrenado con generación aumentada por recuperación (RAG) que aprovecha la base de conocimientos de la empresa.
-
 - Modelo transformador personalizado entrenado con consultas de soporte sintéticas.
 
 51.- *Una institución financiera planea implementar una solución de IA generativa para mejorar la comprensión de los clientes. Dispone de dos conjuntos de datos principales: registros de transacciones en formato tabular y grabaciones de llamadas de atención al cliente. ¿Qué afirmación clasifica y explica correctamente el tipo de datos y sus implicaciones para la IA?*
 
-Los registros de transacciones son datos estructurados; las llamadas de atención al cliente son datos no estructurados, y cada tipo requiere estrategias de preprocesamiento diferentes para su uso en IA generativa.
+- Los registros de transacciones son datos estructurados; las llamadas de atención al cliente son datos no estructurados, y cada tipo requiere estrategias de preprocesamiento diferentes para su uso en IA generativa.
 
-Ambos conjuntos de datos son datos estructurados, por lo que resultan ideales para entrenar modelos de IA generativa mediante aprendizaje supervisado.
+- Ambos conjuntos de datos son datos estructurados, por lo que resultan ideales para entrenar modelos de IA generativa mediante aprendizaje supervisado.
 
-Los registros de transacciones son datos no estructurados; las llamadas de atención al cliente son datos estructurados, ambos utilizables para el aprendizaje por refuerzo.
+- Los registros de transacciones son datos no estructurados; las llamadas de atención al cliente son datos estructurados, ambos utilizables para el aprendizaje por refuerzo.
 
-Ambos conjuntos de datos son datos no estructurados, pero pueden utilizarse directamente en modelos de lenguaje de gran tamaño sin necesidad de transformación.
+- Ambos conjuntos de datos son datos no estructurados, pero pueden utilizarse directamente en modelos de lenguaje de gran tamaño sin necesidad de transformación.
 
 52.- *Una empresa está desarrollando una aplicación de IA generativa para crear textos de marketing. Durante una revisión interna, se descubrió que los resultados del modelo a veces presentan estereotipos de género sutiles y lenguaje excluyente, incluso sin que se les pregunte explícitamente. ¿A qué limitación común de los modelos básicos se relaciona más este problema?*
-
 
 - Límite de conocimiento / Knowledge Cutoff
 - Casos extremos / Edge Cases
@@ -394,48 +386,45 @@ Ambos conjuntos de datos son datos no estructurados, pero pueden utilizarse dire
 
 54.- *Una empresa minorista utiliza un modelo básico para generar respuestas de atención al cliente. La solicitud inicial produce respuestas vagas e inútiles. Para mejorar la calidad de la respuesta, el equipo decide mostrarle al modelo un ejemplo de entrada y una respuesta ideal. ¿Qué técnica de solicitud describe esto?*
 
-One-shot prompting
-Role prompting
-Zero-shot prompting
-Prompt chaining
+- One-shot prompting
+- Role prompting
+- Zero-shot prompting
+- Prompt chaining
 
 55.- *Un gerente de producto planea usar un modelo de IA generativa capaz de procesar video y texto para crear una herramienta inteligente de resumen de video. El modelo debe comprender el contenido hablado y el contexto visual, y generar resúmenes textuales precisos. ¿Qué tipo de modelo base se adapta mejor a este caso de uso?*
 
-Unimodal generative model
-Diffusion model
-Reinforcement learning model
-Multimodal foundation model
+- Unimodal generative model
+- Diffusion model
+- Reinforcement learning model
+- Multimodal foundation model
 
 56.- *Un gerente de producto utiliza una herramienta de IA generativa para resumir un artículo técnico sobre computación cuántica. El resumen incluye varios términos científicos y referencias a ecuaciones que parecen correctas, pero tras la verificación, el equipo descubre que las fórmulas citadas no existen y que algunos conceptos están mal representados. ¿Qué limitación del modelo LLM se demuestra en este escenario?*
 
-Prompt injection
-Hallucinations
-Fine-tuning errors
-Training data bias
+- Prompt injection
+- Hallucinations
+- Fine-tuning errors
+- Training data bias
 
 57.- *En el contexto del desarrollo de agentes de IA generativa de Google Cloud, ¿cuál es el propósito principal de un "plugin" o una "extensión"?*
 
 - Proporcionar al agente un registro de conversaciones anteriores.
-
 - Permitir al agente interactuar con sistemas externos y realizar acciones.
-
 - Gestionar la infraestructura de despliegue y escalado del agente.
-
 - Definir el modelo central de IA generativa que utilizará el agente.
 
 58.- *Un equipo de marketing implementa un asistente de IA generativa para automatizar la creación de campañas, combinando datos de segmentación de audiencia con las directrices de la marca y las tendencias del mercado en tiempo real. El asistente redacta mensajes personalizados y programa publicaciones en diversas plataformas. ¿Qué tipo de agente se utiliza principalmente?*
 
-Data agent
-Workflow agent
-Code agent
-Content agent
+- Data agent
+- Workflow agent
+- Code agent
+- Content agent
 
 59.- *Un ingeniero de aprendizaje automático tiene la tarea de entrenar un modelo de IA generativa a gran escala que requiere importantes recursos computacionales, incluyendo GPU, y desea aprovechar los servicios gestionados para el ajuste de hiperparámetros y el entrenamiento distribuido. ¿Qué componente de Vertex AI está diseñado específicamente para facilitar este proceso de manera eficiente?*
 
-Vertex AI Model Registry
-Vertex AI Custom Training
-Vertex AI Experiments
-Vertex AI Prediction
+- Vertex AI Model Registry
+- Vertex AI Custom Training
+- Vertex AI Experiments
+- Vertex AI Prediction
 
 60.- *Una agencia gubernamental utiliza un modelo de IA generativa para redactar las versiones iniciales de documentos de políticas públicas. Sin embargo, debido a la naturaleza sensible del contenido, la aprobación final debe provenir de expertos en políticas que validan los hechos, ajustan el tono y garantizan el cumplimiento de las normas legales antes de su publicación. La agencia desea asegurar que el contenido generado por IA apoye —pero no reemplace— el juicio humano. ¿Qué técnica es la más adecuada para este escenario?*
 
@@ -443,3 +432,4 @@ Vertex AI Prediction
 - Zero-shot learning
 - Prompt tuning
 - Retrieval-augmented generation (RAG)
+
