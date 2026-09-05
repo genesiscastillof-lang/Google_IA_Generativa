@@ -250,5 +250,199 @@ PaLM 2
 
 34.- *Una empresa está desarrollando una nueva aplicación de IA generativa para ayudar a los agentes de atención al cliente resumiendo los tickets de soporte y sugiriendo respuestas. El equipo de seguridad insiste en implementar medidas de seguridad en cada etapa del ciclo de vida del aprendizaje automático. ¿En qué etapa serían más cruciales el entrenamiento adversario y las pruebas de robustez para integrar la seguridad?*
 
+- Model Training and Validation
+- Data Ingestion and Preparation
+- Model Monitoring and Management
+- Model Deployment
 
+35.- Un bufete de abogados desarrolla un asistente de IA generativa para ayudar a sus abogados a responder consultas legales complejas. Sin embargo, el asistente proporciona respuestas obsoletas o incorrectas, ya que fue entrenado con documentos legales antiguos y carece de acceso a la jurisprudencia y las normativas más recientes. El bufete desea garantizar que el asistente siempre consulte el repositorio interno de documentos más reciente al responder preguntas, sin necesidad de reentrenar el modelo con frecuencia. ¿Cuál es el enfoque más adecuado?
+
+- Multimodal training
+- Retrieval-augmented generation (RAG)
+- Transfer learning
+- Model distillation
+
+36.- Estás utilizando un modelo de IA generativa en Vertex AI para producir textos de marketing. Sin embargo, los resultados suelen ser demasiado genéricos y no se ajustan al tono de tu marca. ¿Cuál de las siguientes técnicas mejoraría de forma más eficaz la calidad de los resultados y su coherencia con el tono de la marca?
+
+- Reduzca el parámetro de temperatura a cero.
+- Utilice ingeniería rápida con ejemplos de pocos disparos.
+- Reduzca el número de épocas de entrenamiento para una respuesta más rápida.
+- Convierta el modelo a un tamaño de parámetro menor.
+
+37.- Una institución financiera está desarrollando un sistema de IA generativa para detectar transacciones fraudulentas. Para entrenar el modelo, utiliza un conjunto de datos etiquetados donde cada transacción se marca como "fraudulenta" o "legítima". El modelo aprende a identificar patrones en estos ejemplos etiquetados para predecir la etiqueta de transacciones nuevas y desconocidas. ¿Qué tipo de aprendizaje automático se está utilizando?
+
+- Unsupervised learning
+- Reinforcement learning
+- Few-shot learning
+- Supervised learning
+
+38.- Una empresa de servicios financieros está implementando un chatbot de IA de última generación para ayudar a los usuarios con sus consultas sobre cuentas. El equipo directivo está preocupado por posibles amenazas como la inyección de código malicioso, la fuga de datos y el acceso no autorizado. ¿Cuál de las siguientes opciones define mejor el concepto de "IA segura" en este contexto?
+
+- La IA segura implica la aplicación de medidas de protección para salvaguardar los sistemas de IA frente a la manipulación y el uso indebido por parte de adversarios.
+
+- La IA segura se refiere al uso de modelos de IA de código cerrado para evitar vulnerabilidades a nivel de código.
+
+- La IA segura implica restringir el uso de la IA a las partes interesadas internas para reducir la exposición pública.
+
+- La IA segura se centra en el cifrado del conjunto de datos de entrenamiento para cumplir con las leyes de residencia de datos.
+
+39.- *Un equipo de desarrollo observa que su modelo de IA generativa produce con frecuencia resultados sesgados al introducir información demográfica. ¿Cuál de las siguientes estrategias es la más eficaz para abordar de forma proactiva esta limitación?*
+
+- Incorporar el aprendizaje por refuerzo a partir de la retroalimentación humana (RLHF) durante el desarrollo del modelo.
+- Aplicar filtros de posprocesamiento para eliminar términos sensibles.
+- Utilizar una temperatura más alta para aumentar la variabilidad en las respuestas.
+- Reducir la longitud de las indicaciones para minimizar las ilusiones del modelo.
+
+40.- *Una empresa de comercio electrónico utiliza una herramienta de IA generativa para redactar automáticamente las descripciones de sus productos. Tras su implementación, algunas descripciones contienen lenguaje sesgado o culturalmente insensible. La dirección desea abordar de forma proactiva los riesgos legales y de reputación sin eliminar por completo el sistema de IA generativa. ¿Qué deberían hacer primero?*
+
+- Implementar filtros de contenido y establecer pautas de ingeniería de instrucciones
+- Ampliar el catálogo de productos para incluir más marcas globales
+- Reentrenar el modelo exclusivamente con los datos de productos actuales
+- Desactivar las funciones generativas hasta que el nuevo personal pueda revisar el contenido manualmente
+
+41.- *Un proveedor de atención médica está adoptando la IA generativa de Google Cloud para ayudar a los investigadores médicos a sintetizar grandes cantidades de literatura científica. Les preocupa especialmente la gobernanza de datos, la indemnización por propiedad intelectual y garantizar que los resultados generados por la IA mantengan altos estándares éticos y no produzcan información dañina o engañosa. ¿Qué aspecto de la IA generativa de Google Cloud es más relevante para abordar estas preocupaciones en su conjunto?*
+
+- Integración nativa con BigQuery para el análisis de datos.
+- Disponibilidad de modelos de código abierto en Model Garden.
+- Marco integral de IA responsable de Google Cloud, que incluye filtros de seguridad e indemnización por propiedad intelectual.
+- Posibilidad de implementar modelos en VPC privadas.
+
+42.- *Se ha descubierto que un modelo de IA genérica utilizado para generar textos publicitarios produce ocasionalmente contenido que refleja estereotipos o prejuicios negativos presentes en sus datos de entrenamiento. ¿Qué aspecto de la IA segura se centra principalmente en mitigar estos resultados indeseables y potencialmente dañinos?*
+
+- Mitigación de sesgos y equidad
+- Criptografía cuántica segura
+- Robustez frente a ataques adversarios
+- Redundancia y recuperación ante desastres
+
+43.- *Una empresa de entretenimiento está explorando la IA generativa para crear personajes, argumentos e incluso fragmentos musicales novedosos para su serie animada. Necesitan una plataforma que fomente la creatividad mediante la generación multimodal y permita experimentar con diversos estilos artísticos. ¿Cuál de las fortalezas de Google Cloud es la más relevante en este caso?*
+
+- Su estricta adhesión a plantillas predefinidas limita la libertad creativa.
+- Su enfoque principal en modelos analíticos, no en la generación de contenido creativo.
+- Sus avanzados modelos base multimodales (p. ej., Gemini, Imagen, Lyria) y sus capacidades flexibles de ingeniería de indicaciones dentro de Vertex AI Generative AI Studio.
+- Su compromiso de admitir únicamente IA generativa basada en texto, excluyendo imágenes y audio.
+
+44.- *Una startup de medios está explorando la IA generativa para optimizar sus operaciones y mejorar la interacción con sus clientes. El equipo directivo desea implementar diversas herramientas de IA para generar publicaciones en redes sociales, crear ilustraciones personalizadas, desarrollar scripts de automatización interna y adaptar el contenido a las preferencias de cada usuario. ¿Qué combinación de tipos de soluciones de IA generativa se ajusta mejor a estos casos de uso?*
+
+- Image generation, prompt chaining, reinforcement learning, and speech synthesis
+- Text generation, image generation, code generation, and personalization
+- Text summarization, anomaly detection, code generation, and translation
+- Image generation, sentiment analysis, code generation, and clustering
+
+45.- *Una empresa de servicios financieros utiliza un modelo de IA generativa implementado a través de Vertex AI para generar resúmenes de inversión para sus clientes. Sin embargo, estos resúmenes a veces incluyen información desactualizada o falsa. ¿Cuál de las siguientes técnicas de validación es la más adecuada para garantizar que el contenido generado sea preciso y se ajuste a los datos financieros en tiempo real?*
+
+- Habilitar el ajuste de temperatura para reducir la aleatoriedad en la salida.
+- Implementar un proceso de generación aumentada por recuperación (RAG) utilizando fuentes de datos financieros actualizadas.
+- Utilizar ingeniería de indicaciones para solicitar al modelo que responda únicamente con datos objetivos.
+- Añadir comentarios del usuario al final de cada indicación para reforzar el comportamiento esperado.
+
+46.- *Un bufete de abogados necesita garantizar que sus asistentes legales internos puedan recuperar rápidamente precedentes relevantes, plantillas de contratos y actualizaciones regulatorias de diversas bases de datos y repositorios de documentos internos. Buscan desarrollar agentes de IA seguros que cumplan con la normativa legal y los controles de acceso, a la vez que mejoren la eficiencia. ¿Qué solución de Google Cloud satisface mejor esta necesidad?*
+
+- Usa Gemini en Gmail para resumir automáticamente los correos electrónicos legales entrantes.
+
+- Usa Google Cloud Agentspace para crear agentes de IA seguros y contextuales para la investigación legal interna.
+
+- Usa Colab Enterprise para crear cuadernos que permitan consultar manualmente conjuntos de datos legales.
+
+- Usa Google Search Appliance para rastrear e indexar datos empresariales.
+
+47.- *Una startup del sector salud quiere explorar la IA generativa para ayudar a los médicos a resumir las notas de las consultas de los pacientes, pero carece de experiencia interna en IA. ¿Cuál es la forma más eficaz para que esta empresa comience a utilizar las capacidades de IA de Google Cloud?*
+
+- Entrenar su propio modelo de lenguaje a gran escala utilizando datos de código abierto.
+
+- Utilizar las herramientas de bajo código y los modelos base de Vertex AI para crear un prototipo sin necesidad de tener amplios conocimientos de aprendizaje automático.
+
+- Contratar una consultora externa de IA para desarrollar un modelo totalmente personalizado desde cero.
+
+- Esperar a contratar científicos de datos experimentados antes de iniciar el desarrollo de la IA.
+
+48.- *¿Cuál de las siguientes opciones describe con precisión un beneficio fundamental del uso de Vertex AI Model Garden en el ecosistema de IA generativa de Google Cloud?*
+
+- Permite la automatización de bajo código del aprovisionamiento de infraestructura.
+- Facilita el descubrimiento y uso de modelos base con implementación en un solo clic.
+- Es una herramienta de interfaz de usuario para etiquetar manualmente conjuntos de datos para modelos AutoML.
+- Proporciona modelos 3D predefinidos para el desarrollo de realidad virtual.
+
+49.- *Una empresa está explorando cómo aprovechar los modelos de lenguaje a gran escala (LLM, por sus siglas en inglés) para mejorar la productividad en todos sus departamentos. Los líderes desean comprender las capacidades que hacen que los LLM sean aplicables a diversas tareas, como resumir documentos, generar código y brindar soporte al cliente. ¿Qué capacidad clave permite que los LLM tengan un buen desempeño en casos de uso tan variados?*
+
+- Los modelos de aprendizaje por correspondencia (LLM) utilizan el aprendizaje por transferencia para generalizar en diversos dominios y tareas.
+- Los LLM funcionan principalmente como motores de indexación para recuperar respuestas predefinidas.
+- Los LLM requieren un reentrenamiento específico para cada nueva área de aplicación.
+- Los LLM están diseñados para operar exclusivamente en entornos de datos estructurados.
+
+50.- *Una agencia de marketing digital quiere realizar pruebas A/B para anuncios online que muestren nuevos envases ecológicos. Necesitan crear rápidamente múltiples imágenes a partir de breves conceptos de texto y descripciones de productos, sin recurrir a herramientas de diseño tradicionales. ¿Cuál es el uso más apropiado de Imagen en este caso?*
+
+- Recopilar métricas de interacción del usuario en múltiples plataformas.
+- Traducir los anuncios a diferentes idiomas para audiencias globales.
+- Visualizar conceptos de empaques ecológicos a partir de descripciones.
+- Redactar varias versiones de textos publicitarios para los empaques ecológicos.
+
+51.- *Una agencia de medios quiere usar Veo para transmitir en vivo un evento deportivo, añadiendo comentarios en tiempo real generados por IA generativa. ¿Por qué Veo no es adecuado para este caso de uso?*
+
+- Veo solo admite la creación de GIF animados para historias visuales cortas.
+- Veo no permite incluir superposiciones de texto en los vídeos generados.
+- Veo no puede generar ningún tipo de vídeo a partir de indicaciones de texto.
+- Veo no admite el procesamiento de entrada en tiempo real ni la transmisión de vídeo en directo.
+
+52.- *El departamento de TI de una empresa desea optimizar el acceso de los empleados a las políticas, los documentos de incorporación y los materiales de capacitación. Planean utilizar un sistema donde los agentes de IA generativa se adapten para comprender el contexto de las consultas de los empleados y responder con precisión conectándose a diversos repositorios de datos internos. ¿Qué funcionalidad de Google Cloud Agentspace respalda directamente este objetivo?*
+
+- Permite la creación de agentes específicos para tareas que se conectan a sistemas empresariales mediante interfaces de lenguaje natural.
+- Optimiza los modelos de lógica de negocio (LLM) con datos empresariales sin necesidad de API.
+- Genera datos sintéticos para mejorar los conjuntos de datos de entrenamiento internos.
+- Ejecuta LLM externos en un entorno aislado para pruebas de cumplimiento.
+
+53.- *Un equipo de ciencia de datos está preparando un gran conjunto de datos de texto para entrenar un modelo de IA generativa que genere documentación técnica. Se encuentran con numerosos casos donde términos clave están escritos de forma inconsistente (por ejemplo, "Kubernetes", "k8s", "Kubernettes") y valores numéricos críticos (por ejemplo, números de versión, números de puerto) suelen faltar. ¿Cuál de las siguientes características de calidad de datos está principalmente en riesgo y cuál es la consecuencia más probable para el modelo de IA generativa?*
+
+- Integridad y consistencia: Aumento de las alucinaciones y menor precisión fáctica.
+- Relevancia y disponibilidad: Tiempos de entrenamiento más lentos y mayores costos computacionales.
+- Integridad y unicidad: Datos redundantes y optimización ineficiente del modelo.
+- Formato y costo: Dificultad en el análisis de datos y mayores requisitos de almacenamiento.
+
+54.- *Una startup del sector salud utiliza un modelo basado en Google Cloud para generar resúmenes de informes médicos a partir de las notas de los doctores. Han notado que el resultado a veces contiene información incorrecta o es demasiado extenso. ¿Cuál de las siguientes técnicas mejoraría de forma más eficaz la precisión y la relevancia del contenido generado?*
+
+- Aumentar el límite máximo de tokens para permitir una generación de lenguaje más elaborada.
+- Reducir el parámetro de temperatura a cero para fomentar una salida más larga y detallada.
+- Utilizar únicamente sugerencias con pocos ejemplos genéricos para guiar al modelo.
+- Utilizar la Generación Aumentada por Recuperación (RAG) para incorporar contexto relevante antes de generar resúmenes.
+
+55.- *Una empresa de servicios financieros desea implementar una solución de IA generativa que resuma contratos legales complejos de varias páginas. Los resúmenes deben ser precisos y los documentos originales pueden contener datos confidenciales de los clientes. ¿Qué atributo del modelo base es el más importante a priorizar en este caso?*
+ 
+- Model's maximum context window
+- Multilingual generation capability
+- Performance on synthetic image generation
+- Modality
+
+56.- *Un bufete de abogados está trabajando en un caso que requiere revisar cientos de páginas de contratos y documentos regulatorios. Necesitan una herramienta de IA que pueda procesar estos documentos, resumir las cláusulas legales clave, identificar referencias cruzadas entre ellos y permitir una exploración eficiente de la información relevante. ¿Qué herramienta de Google Cloud es la más adecuada para esta tarea?*
+
+- Gemini app
+- Vertex AI Studio
+- NotebookLM
+- Duet AI for Developers
+
+57.- *Una empresa está preparando un conjunto de datos masivo de contenido multimodal (texto, imágenes, audio) para entrenar un modelo de IA generativa que creará campañas de marketing personalizadas. ¿Qué servicio de Google Cloud es el más adecuado para la etapa inicial de ingesta de datos y almacenamiento escalable para datos tan diversos y de gran volumen?*
+
+- BigQuery
+- Dataproc
+- Cloud Storage
+- Cloud SQL
+
+58.- *Una empresa minorista global está explorando la adopción de la IA generativa para mejorar sus operaciones de atención al cliente. Están considerando implementar un chatbot con IA que pueda generar respuestas personalizadas a las consultas de los clientes, resolver problemas comunes e incluso sugerir recomendaciones de productos basadas en el historial de compras. ¿En qué nivel fundamental del panorama de la IA generativa se desarrollaría e implementaría principalmente este chatbot de atención al cliente?*
+
+- Capa de infraestructura
+- Capa de aplicación
+- Capa de datos
+- Capa de modelo
+
+59.- *Una aplicación de IA generativa está diseñada para resumir el contenido generado por el usuario, pero existe la preocupación de que el modelo genere inadvertidamente material sensible o inapropiado debido a la naturaleza de la entrada. ¿Qué configuración o técnica de seguridad está más directamente orientada a mitigar este riesgo?*
+
+- Utilización de filtros de seguridad preentrenados y API de moderación de contenido.
+- Ajuste fino del modelo con un conjunto de datos ampliado de contenido de internet diverso y sin filtrar.
+- Implementación de Generación Aumentada de Recuperación (RAG) para proporcionar contexto externo.
+- Ajuste de la temperatura a un valor más bajo.
+
+60.- *¿Cuál de las siguientes opciones describe mejor una característica fundamental del aprendizaje por refuerzo en los sistemas de IA?*
+
+- Aprendizaje mediante la combinación de múltiples modelos débiles en un modelo robusto.
+- Mejora del rendimiento mediante la maximización de las recompensas acumulativas a través de ensayo y error.
+- Aprendizaje a partir de grandes volúmenes de texto de internet para predecir el siguiente token.
+- Descubrimiento de la estructura de los datos sin etiquetas predefinidas.
 

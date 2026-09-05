@@ -4,7 +4,7 @@ actua como un desarrollador de integraciones postulando a un puesto de especiali
 
 **EL OBJETIVO**
 
-responder a la entrevista para el puesto mencionado con el gerente TI integracion XXXXXXXXX del Banco BCI en chile.
+responder a la entrevista para el puesto mencionado con XXXXXXXXX del YYYYYYY en chile.
 
 **EL CONTEXTO**
 
@@ -28,13 +28,13 @@ elaborar 30 principales preguntas posible que pueda hacer para esta entrevista c
 
 ---
 
-# Preguntas y respuestas — Entrevista Bci (con ejemplos y recursos)
+# Preguntas y respuestas — Entrevista Banco (con ejemplos y recursos)
 
 ## 1. Motivación y fit
 
 **1. ¿Por qué te interesa este puesto y por qué en Bci?**
 
-Porque Bci lidera la transformación digital en Chile y quiero aportar mi experiencia en integración a una plataforma que impacta a millones de clientes.
+Porque Banco lidera la transformación digital en Chile y quiero aportar mi experiencia en integración a una plataforma que impacta a millones de clientes.
 
 **2. ¿Qué entiendes por "plataforma de integración" y cuál es su rol en la transformación digital?**
 
@@ -165,9 +165,9 @@ Conozco los principios de Open Banking (consentimiento, APIs estandarizadas) y m
 Consentimiento, APIs estandarizadas, modelo de referencia BIAN
 Estándares clave para interoperabilidad en servicios financieros.
 
-**Open Banking, ISO 20022 o BIAN en BCI**
+**Open Banking, ISO 20022 o BIAN**
 
-- **Open Banking (Banca Abierta):** Bci es pionero y referente en Chile en la implementación de este modelo. Cuenta con herramientas como el Bci API Market y su plataforma 360 Connect, que permite a las empresas integrar saldos y movimientos de otros bancos de forma centralizada.
+- **Open Banking (Banca Abierta):** Banco es pionero y referente en Chile en la implementación de este modelo. Cuenta con herramientas como el Banco API Market y su plataforma 360 Connect, que permite a las empresas integrar saldos y movimientos de otros bancos de forma centralizada.
 - **ISO 20022:** Es el estándar mundial para el intercambio electrónico de datos entre instituciones financieras. Los bancos modernos, incluido Bci, lo adoptan para homologar pagos internacionales y locales con mayor cantidad de datos y seguridad.
 - **BIAN (Banking Industry Architecture Network):** Es un marco global de arquitectura de microservicios para la banca. Muchas entidades que realizan transformaciones digitales profundas —como la estrategia de innovación de Bci— usan BIAN como guía para estructurar sus sistemas internos.
 
@@ -444,3 +444,6 @@ Ademas con el entrenamineto minimo necesario, los modelos de base se pueden adap
 ## ¿como funciona la IA generativa?
 
 la IA generativa usa modelo de AA **(Aprendizaje automatico)** para aprender patrones y las relaciones en un conjunto de ideas de datos de contenido creado por humanos y las etiquetas correspondientes, Luego aprende a generar contenido similiar al creado por humanos y etiquetado con las misma etiquetas.
+
+
+
