@@ -327,11 +327,11 @@ Las TPU en la arquitectura de hipercomputación de Google Cloud ofrecen computac
 
 Este trío de herramientas responde directamente a las necesidades de los desarrolladores en este escenario:
 
-    **Model Garden** ofrece modelos base preentrenados (p. ej., Gemini, PaLM, Imagen) que se pueden ajustar fácilmente, lo que permite a los desarrolladores crear modelos de aprendizaje automático potentes listos para usar.
+**Model Garden** ofrece modelos base preentrenados (p. ej., Gemini, PaLM, Imagen) que se pueden ajustar fácilmente, lo que permite a los desarrolladores crear modelos de aprendizaje automático potentes listos para usar.
 
-    **Vertex AI Search** proporciona capacidades de búsqueda de nivel empresarial con comprensión del lenguaje natural y generación aumentada de recuperación (RAG), lo que la hace ideal para navegar por documentos médicos o bases de conocimiento.
+**Vertex AI Search** proporciona capacidades de búsqueda de nivel empresarial con comprensión del lenguaje natural y generación aumentada de recuperación (RAG), lo que la hace ideal para navegar por documentos médicos o bases de conocimiento.
 
-    **AutoML** permite a usuarios sin experiencia entrenar modelos personalizados con un mínimo de código, utilizando técnicas avanzadas como el aprendizaje por transferencia. Abstrae gran parte de la complejidad del entrenamiento y la evaluación de modelos, lo que resulta ideal para equipos con conocimientos limitados en aprendizaje automático.
+**AutoML** permite a usuarios sin experiencia entrenar modelos personalizados con un mínimo de código, utilizando técnicas avanzadas como el aprendizaje por transferencia. Abstrae gran parte de la complejidad del entrenamiento y la evaluación de modelos, lo que resulta ideal para equipos con conocimientos limitados en aprendizaje automático.
 
 En conjunto, estas herramientas aceleran el desarrollo de IA, reducen el tiempo de obtención de valor y disminuyen las barreras técnicas, lo que las hace perfectamente adecuadas para este escenario.
 
